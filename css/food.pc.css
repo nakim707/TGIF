@@ -96,18 +96,22 @@
   }
   /* ---------- con2 ---------- */
   #con2 {
-    width: 1200px;
+    width: 1100px;
     background-color: white;
     margin: 0px auto;
     text-align: center;
-  }
-  #con2 img {
-    width: 100%;
+    background-image: url(../img/food_salad1.png), url(../img/food_salad2.png),
+      url(../img/food_salad3.png), url(../img/food_salad4.png);
+    background-repeat: no-repeat;
+    background-position: 30px 310px, 800px 600px, -30px 850px, 740px 1100px;
+    background-size: 300px, 320px, 380px, 300px;
   }
   #con2 .stripeTop {
+    width: 100%;
     margin-bottom: 5px;
   }
   #con2 .stripeBottom {
+    width: 100%;
     margin-bottom: -5px;
   }
   #con2 h2 {

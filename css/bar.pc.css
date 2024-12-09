@@ -78,18 +78,18 @@
     font-size: 30px;
     letter-spacing: 2px;
   }
-  #con1 ul {
+  #con1 .list {
     margin-bottom: 300px;
   }
-  #con1 li.on h3,
-  #con1 li.on p {
+  #con1 .list li.on h3,
+  #con1 .list li.on p {
     color: #d70204;
   }
   #con1 li p {
     font-size: 14px;
     margin-bottom: 20px;
   }
-  .bigImg img {
+  /* .bigImg img {
     width: 200px;
   }
   .smallImg img {
@@ -100,6 +100,25 @@
   }
   .smallImg {
     margin-left: 50px;
+  } */
+  .img {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
+  .img li:nth-child(1) img {
+    width: 200px;
+  }
+  .img :nth-child(2) img,
+  .img :nth-child(3) img {
+    width: 90px;
+  }
+  .img :nth-child(2) p,
+  .img :nth-child(3) p {
+    display: none;
+  }
+  .img {
+    margin-left: 150px;
   }
   /* ---------- con2 ---------- */
   #con2 {
