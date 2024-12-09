@@ -36,6 +36,7 @@
     letter-spacing: 2;
     color: #d70204;
     background-color: white;
+    border-radius: 7px;
   }
   #visual img {
     width: 550px;
