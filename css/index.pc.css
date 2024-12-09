@@ -164,7 +164,7 @@
   }
   #con1 .con1Bottom li:nth-child(3) {
     width: calc(100% / 2 - 20px);
-    background-image: url(../img/index_con1_4.jpg);
+    background-image: url(../img/index_con1_4.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
