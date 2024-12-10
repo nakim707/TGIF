@@ -1,0 +1,284 @@
+@media (min-width: 800px) and (max-width: 1200px) {
+  /* ---------- layout ---------- */
+  body {
+    background-color: #f6e0b7;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    width: 750px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 img {
+    width: 140px;
+  }
+  header ul {
+    display: flex;
+    gap: 35px;
+  }
+  header li {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+  }
+
+  /* ---------- visual ---------- */
+  #visual {
+    width: 100%;
+    height: 27rem;
+    overflow: hidden;
+    background-image: url(../img/visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #d70204;
+  }
+  #visual h2 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    line-height: 27rem;
+    letter-spacing: 3px;
+  }
+
+  /* ---------- con1 ---------- */
+  #con1 {
+    width: 100%;
+    margin: 8rem 0px;
+  }
+  #con1 ul {
+    width: 770px;
+    margin: 0px auto;
+    display: flex;
+    gap: 30px;
+  }
+  #con1 li {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #con1 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+    font-size: 40px;
+  }
+  #con1 li:nth-child(1) {
+    background-image: url(../img/food_con1_salad2.png);
+    line-height: 180px;
+  }
+  #con1 li:nth-child(2) {
+    background-image: url(../img/food_con1_pasta2.png);
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-top: 3rem;
+  }
+  #con1 li:nth-child(3) {
+    background-image: url(../img/food_con1_burger2.png);
+    line-height: 180px;
+  }
+  #con1 li:nth-child(4) {
+    background-image: url(../img/food_con1_grill2.png);
+    line-height: 180px;
+  }
+  #con1 li.on {
+    background-color: #d70204;
+    background-image: none;
+  }
+  /* ---------- con2 ---------- */
+  #con2 {
+    width: 750px;
+    background-color: white;
+    margin: 0px auto;
+    text-align: center;
+    background-image: url(../img/food_salad1.png), url(../img/food_salad2.png),
+      url(../img/food_salad3.png), url(../img/food_salad4.png);
+    background-repeat: no-repeat;
+    background-position: 30px 310px, 540px 600px, -30px 850px, 580px 1100px;
+    background-size: 240px, 280px, 300px, 260px;
+  }
+  #con2 img {
+    width: 100%;
+  }
+  #con2 .stripeTop {
+    margin-bottom: 10px;
+  }
+  #con2 .stripeBottom {
+    margin-bottom: -5px;
+  }
+  #con2 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    margin-top: 3rem;
+    letter-spacing: 5px;
+  }
+  #con2 > p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 5rem;
+    font-weight: 100;
+  }
+  #con2 .menu {
+    margin: 5rem 0px;
+  }
+  #con2 .menu h3 {
+    font-size: 24px;
+  }
+  #con2 .menu h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0.6rem 0px 1.2rem;
+  }
+  #con2 .menu div {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #d70204;
+  }
+  #con2 .notice {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0.6rem 0px 1.4rem;
+  }
+
+  /* ---------- con3 ---------- */
+  #con3 {
+    width: 750px;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  #con3 > div {
+    width: calc(100% / 2 - 10px);
+    height: 260px;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  #con3 ul {
+    width: 270px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 0px auto;
+    padding-top: 2.4rem;
+  }
+  #con3 li {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+  #con3 img {
+    width: 60px;
+  }
+  #con3 .recipe {
+    background-color: #d70204;
+  }
+  .recipe li {
+    color: white;
+  }
+  .recipe div {
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: white;
+    margin: 2rem 0px 0px 2.5rem;
+  }
+  .recipe div a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #d70204;
+    font-size: 20px;
+  }
+  #con3 .allergy {
+    background-color: white;
+    margin-top: 1px;
+  }
+  .allergy li {
+    color: #d70204;
+  }
+  .allergy div {
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #d70204;
+    margin: 2.4rem 0px 0px 2.5rem;
+  }
+  .allergy div a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+  /* ---------- footer ---------- */
+  footer {
+    width: 100%;
+    padding: 1.3rem 0px;
+    margin-top: 10rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  footer h3 {
+    font-size: 30px;
+  }
+  footer h4 {
+    width: 200px;
+    margin: 0px auto;
+    font-size: 30px;
+    padding-bottom: 1.2rem;
+    margin-bottom: 4rem;
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+    border-bottom: 2px solid white;
+  }
+  footer .footer {
+    width: 96%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .sns {
+    display: flex;
+    gap: 10px;
+  }
+  footer .sns li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  footer .policy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .policy li:last-child {
+    border: 1px solid white;
+    padding: 0.4rem 0.7rem;
+  }
+  .policy a {
+    color: white;
+    font-size: 13px;
+  }
+}

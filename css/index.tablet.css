@@ -1,0 +1,385 @@
+@media (min-width: 800px) and (max-width: 1200px) {
+  /* ---------- layout ---------- */
+  body {
+    background-color: #f6e0b7;
+  }
+  /* ---------- visual ---------- */
+  #visual {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    background-image: url(../img/visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Bebas Neue", sans-serif;
+    position: relative;
+    background-color: #d70204;
+  }
+  .visualTxt {
+    padding-top: 7rem;
+    margin-left: 4rem;
+  }
+  .visualTxt h2 {
+    color: white;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 7px;
+  }
+  .visualTxt div {
+    width: 100px;
+    height: 40px;
+    margin-top: 2rem;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2;
+    color: #d70204;
+    background-color: white;
+  }
+  #visual img {
+    width: 500px;
+    position: absolute;
+    right: -8rem;
+    bottom: -4rem;
+  }
+  /* ---------- header ---------- */
+  header {
+    width: 750px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 img {
+    width: 140px;
+  }
+  header ul {
+    display: flex;
+    gap: 35px;
+  }
+  header li {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+  }
+  /* ---------- container ---------- */
+
+  /* con1 */
+  #con1 {
+    width: 800px;
+    height: 500px;
+    margin: 0px auto;
+    font-family: "Bebas Neue", sans-serif;
+    overflow-y: hidden;
+  }
+  #con1 ul {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    gap: 0.7rem;
+  }
+  #con1 li {
+    border-radius: 8px;
+  }
+  #con1 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .con1Bottom {
+    margin-top: 0.7rem;
+  }
+  #con1 .con1Top li:nth-child(1) {
+    width: calc(100% / 2 - 0.7rem);
+    background-image: url(../img/index_con1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #con1 .con1Top li:nth-child(2) {
+    width: calc(100% / 4 - 0.7rem);
+    background-image: url(../img/index_con1_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #con1 .con1Top li:nth-child(3) {
+    width: calc(100% / 4 - 0.7rem);
+    background-color: white;
+    text-align: center;
+  }
+  #con1 .con1Top li:nth-child(3) h3 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin-top: 1.5rem;
+  }
+  #con1 .con1Top li:nth-child(3) div {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0.8rem auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #d70204;
+    border: 2px solid #d70204;
+    border-radius: 7px;
+    letter-spacing: 1px;
+  }
+  #con1 .con1Bottom li:nth-child(1) {
+    width: calc(100% / 4 - 0.7rem);
+    background-image: url(../img/index_con1_3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #con1 .con1Bottom li:nth-child(2) {
+    width: calc(100% / 4 - 0.7rem);
+    background-color: #d70204;
+    text-align: center;
+  }
+  #con1 .con1Bottom li:nth-child(2) h4 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 1.2rem;
+  }
+  #con1 .con1Bottom li:nth-child(2) p {
+    margin-top: 0.2rem;
+    font-family: "Open Sans", serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+  }
+  #con1 .con1Bottom li:nth-child(2) div {
+    width: 100px;
+    height: 30px;
+    line-height: 33px;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #d70204;
+  }
+  #con1 .con1Bottom li:nth-child(3) {
+    width: calc(100% / 2 - 0.7rem);
+    background-image: url(../img/index_con1_4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  /* con2 */
+  #con2 {
+    width: 100%;
+    height: 16rem;
+    background-color: white;
+    margin-top: 10rem;
+    position: relative;
+  }
+  /* food img */
+  #con2 ul {
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -55%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #con2 li:nth-child(1) img {
+    width: 260px;
+  }
+  #con2 li:nth-child(2) img {
+    width: 320px;
+  }
+  #con2 li:nth-child(3) img {
+    width: 260px;
+  }
+  /* txt */
+  .con2txt {
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .con2txt h4 {
+    font-size: 22px;
+    color: #d70204;
+    margin-bottom: 0.8rem;
+  }
+  .con2txt p {
+    font-size: 12px;
+  }
+  .con2txt div {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    margin: 1rem auto;
+    background-color: #d70204;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+  }
+  .con2txt div a {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+  }
+  /* btn */
+  #con2 i {
+    font-size: 50px;
+    color: #d70204;
+  }
+  #con2 .prev {
+    position: absolute;
+    top: -10%;
+    left: 25%;
+    z-index: 10;
+  }
+  #con2 .next {
+    position: absolute;
+    top: -10%;
+    right: 25%;
+    z-index: 10;
+  }
+  /* con3 */
+  #con3 {
+    width: 100%;
+    height: 35rem;
+    background-color: white;
+    margin-top: 10rem;
+    background-image: url(../img/stripe.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    overflow-y: hidden;
+  }
+  #con3 h4 {
+    padding-top: 4rem;
+    font-size: 35px;
+  }
+  #con3 h3 {
+    font-size: 50px;
+  }
+  #con3 span {
+    color: #d70204;
+  }
+  #con3 ul {
+    width: 60%;
+    display: flex;
+    gap: 30px;
+    margin: -4rem auto;
+  }
+  #con3 li:nth-child(2) {
+    margin-top: 6rem;
+  }
+  #con3 img {
+    width: 100%;
+  }
+
+  /* con4 */
+  #con4 {
+    width: 100%;
+    margin-top: 9rem;
+    display: flex;
+  }
+  #con4 .storeImg {
+    width: 400px;
+    height: 400px;
+    margin-left: 5rem;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url(../img/index_con4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  #con4 .con4txt {
+    margin-left: 2rem;
+    margin-top: 7rem;
+  }
+  #con4 h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+  }
+  #con4 span {
+    color: #d70204;
+  }
+  #con4 p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  #con4 .btnRed {
+    color: white;
+    background-color: #d70204;
+    width: 170px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  /* ---------- footer ---------- */
+  footer {
+    width: 100%;
+    padding: 1.3rem 0px;
+    margin-top: 10rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  footer h3 {
+    font-size: 30px;
+  }
+  footer h4 {
+    width: 200px;
+    margin: 0px auto;
+    font-size: 30px;
+    padding-bottom: 1.2rem;
+    margin-bottom: 4rem;
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+    border-bottom: 2px solid white;
+  }
+  footer .footer {
+    width: 96%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .sns {
+    display: flex;
+    gap: 10px;
+  }
+  footer .sns li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  footer .policy {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .policy li:last-child {
+    border: 1px solid white;
+    padding: 0.4rem 0.7rem;
+  }
+  .policy a {
+    color: white;
+    font-size: 13px;
+  }
+}
