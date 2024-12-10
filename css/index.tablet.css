@@ -189,13 +189,13 @@
     transform: translateX(-50%);
   }
   #con2 li:nth-child(1) img {
-    width: 260px;
+    width: 240px;
   }
   #con2 li:nth-child(2) img {
     width: 320px;
   }
   #con2 li:nth-child(3) img {
-    width: 260px;
+    width: 240px;
   }
   /* txt */
   .con2txt {
@@ -238,12 +238,14 @@
     top: -10%;
     left: 25%;
     z-index: 10;
+    cursor: pointer;
   }
   #con2 .next {
     position: absolute;
     top: -10%;
     right: 25%;
     z-index: 10;
+    cursor: pointer;
   }
   /* con3 */
   #con3 {
