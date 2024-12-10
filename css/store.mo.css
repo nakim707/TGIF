@@ -1,4 +1,4 @@
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (max-width: 800px) {
   /* ---------- layout ---------- */
   body {
     background-color: #f6e0b7;
@@ -6,31 +6,26 @@
 
   /* ---------- header ---------- */
   header {
-    width: 750px;
+    width: 90%;
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   header h1 img {
-    width: 140px;
+    width: 100px;
   }
-  header ul {
-    display: flex;
-    gap: 35px;
-  }
-  header li {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
+  .gnb {
+    display: none;
   }
   .bar {
-    display: none;
+    font-size: 23px;
   }
 
   /* ---------- visual ---------- */
   #visual {
     width: 100%;
-    height: 27rem;
+    height: 20rem;
     overflow: hidden;
     background-image: url(../img/visual.jpg);
     background-repeat: no-repeat;
@@ -40,36 +35,44 @@
     background-color: #d70204;
   }
   #visual h2 {
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     text-align: center;
-    line-height: 27rem;
+    line-height: 20rem;
     letter-spacing: 3px;
   }
 
   /* ---------- popup ---------- */
   #popup {
-    width: 750px;
+    width: 95%;
     margin: 8rem auto;
     background-color: white;
+    overflow: hidden;
   }
   #popup .stripe1 {
-    width: 100%;
-    margin-bottom: 5px;
+    width: 130%;
+    height: 10px;
+    margin-bottom: 7px;
   }
   #popup .stripe2 {
-    width: 100%;
+    width: 130%;
+    height: 12px;
     margin-bottom: -5px;
   }
   #popup > ul {
-    width: 650px;
-    margin: 2.5rem auto;
+    width: 80%;
+    margin: 0rem auto;
+    margin-top: 2.5rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #popup li:first-child {
+    margin: 0px auto;
   }
   #popup li:last-child {
-    width: 330px;
-    box-sizing: border-box;
+    width: 95%;
+    margin: 1rem auto;
   }
   #popup span {
     font-weight: bold;
@@ -85,18 +88,19 @@
     margin-top: 8rem;
   }
   #con1 .store {
-    width: 750px;
-    height: 210px;
-    margin: 6rem auto;
+    width: 90%;
+    margin: 4rem auto;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
   }
   #con1 .store > li {
     border-radius: 10px;
     font-size: 14px;
   }
   #con1 .store img {
-    width: 300px;
+    width: 260px;
     border-radius: 10px;
   }
   #con1 h3 {
@@ -109,7 +113,6 @@
     color: #d70204;
   }
   #con1 .store > li:last-child {
-    width: calc(100% - 315px);
     background-color: white;
     box-sizing: border-box;
     padding: 2rem;
@@ -197,7 +200,7 @@
   footer {
     width: 100%;
     padding: 1.3rem 0px;
-    margin-top: 10rem;
+    margin-top: 6rem;
     background-color: black;
     text-align: center;
     color: white;
@@ -238,11 +241,15 @@
   footer .policy {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+  }
+  .policy li {
+    display: none;
   }
   .policy li:last-child {
     border: 1px solid white;
     padding: 0.4rem 0.7rem;
+    display: block;
   }
   .policy a {
     color: white;

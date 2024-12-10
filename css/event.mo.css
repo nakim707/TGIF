@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (max-width: 800px) {
   /* ---------- layout ---------- */
   body {
     background-color: #f6e0b7;
@@ -6,31 +6,26 @@
 
   /* ---------- header ---------- */
   header {
-    width: 1200px;
-    margin: 50px auto;
+    width: 90%;
+    margin: 3rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   header h1 img {
-    width: 140px;
+    width: 100px;
   }
-  header ul {
-    display: flex;
-    gap: 35px;
-  }
-  header li {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
+  .gnb {
+    display: none;
   }
   .bar {
-    display: none;
+    font-size: 23px;
   }
 
   /* ---------- visual ---------- */
   #visual {
     width: 100%;
-    height: 500px;
+    height: 20rem;
     overflow: hidden;
     background-image: url(../img/visual.jpg);
     background-repeat: no-repeat;
@@ -40,16 +35,15 @@
     background-color: #d70204;
   }
   #visual h2 {
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     text-align: center;
-    line-height: 500px;
+    line-height: 20rem;
     letter-spacing: 3px;
   }
-
   /* ---------- con1 ---------- */
   #con1 {
-    margin-top: 100px;
+    margin-top: 7rem;
   }
   #con1 div {
     background-repeat: no-repeat;
@@ -58,9 +52,9 @@
   }
 
   #con1 h3 {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
   #con1 p {
     font-size: 16px;
@@ -68,22 +62,22 @@
     line-height: 30px;
   }
   .txtRight {
-    width: 340px;
-    height: 390px;
+    width: 300px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-left: 50px;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 4rem 2rem;
   }
   .txtRight div {
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
     text-align: center;
     border-radius: 6px;
     background-color: #d70204;
-    margin: 30px 0px 0px 150px;
+    margin: 2rem 0px 0px 1rem;
   }
   .txtRight a {
     width: 100%;
@@ -92,23 +86,23 @@
     color: white;
   }
   .txtLeft {
-    width: 340px;
-    height: 390px;
-    text-align: right;
+    width: 300px;
+    height: 350px;
+    text-align: left;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-left: 71%;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 4rem 2rem;
   }
   .txtLeft div {
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
     text-align: center;
+    font-size: 14px;
     border-radius: 6px;
     background-color: #d70204;
-    margin: 30px 0px 0px 20px;
+    margin: 2rem 0px 0px 1rem;
   }
   .txtLeft a {
     width: 100%;
@@ -119,35 +113,35 @@
   /* event1 */
   .event1 {
     width: 100%;
-    height: 390px;
-    margin-bottom: 70px;
+    height: 350px;
+    margin-bottom: 3rem;
     background-image: url(../img/event_con1_1.jpg);
   }
   /* event2 */
   .event2 {
     width: 100%;
-    height: 390px;
-    margin-bottom: 70px;
+    height: 350px;
+    margin-bottom: 3rem;
     background-image: url(../img/event_con1_2.jpg);
   }
   /* event3 */
   .event3 {
     width: 100%;
-    height: 390px;
-    margin-bottom: 70px;
+    height: 350px;
+    margin-bottom: 3rem;
     background-image: url(../img/event_con1_3.jpg);
   }
   /* event4 */
   .event4 {
     width: 100%;
-    height: 390px;
+    height: 350px;
     background-image: url(../img/event_con1_4.jpg);
   }
 
   /* ---------- con2 ---------- */
   #con2 {
-    width: 1000px;
-    margin: 100px auto;
+    width: 90%;
+    margin: 8rem auto;
     background-color: white;
   }
   #con2 .stripe1 {
@@ -157,22 +151,21 @@
   }
   #con2 h2 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 5px;
     color: #d70204;
-    margin: 30px 0px 20px 80px;
+    text-align: center;
   }
   #con2 ul {
-    width: 700px;
+    width: 80%;
     margin: 0px auto;
     padding-bottom: 50px;
   }
   #con2 li {
-    height: 30px;
-    line-height: 30px;
-    margin: 10px 0px;
+    margin: 0.5rem 0px;
     box-sizing: border-box;
-    padding: 0px 10px;
+    padding: 0.5rem 0.5rem;
+    font-size: 14px;
   }
   #con2 li:nth-child(2n) {
     background-color: #ccc;
@@ -186,8 +179,8 @@
   /* ---------- footer ---------- */
   footer {
     width: 100%;
-    padding: 30px 0px 20px;
-    margin-top: 120px;
+    padding: 1.3rem 0px;
+    margin-top: 6rem;
     background-color: black;
     text-align: center;
     color: white;
@@ -199,8 +192,8 @@
     width: 200px;
     margin: 0px auto;
     font-size: 30px;
-    padding-bottom: 12px;
-    margin-bottom: 40px;
+    padding-bottom: 1.2rem;
+    margin-bottom: 4rem;
     -webkit-text-stroke: 0.5px white;
     color: transparent;
     border-bottom: 2px solid white;
@@ -230,9 +223,13 @@
     align-items: center;
     gap: 20px;
   }
+  .policy li {
+    display: none;
+  }
   .policy li:last-child {
     border: 1px solid white;
-    padding: 4px 8px;
+    padding: 0.4rem 0.7rem;
+    display: block;
   }
   .policy a {
     color: white;

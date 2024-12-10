@@ -23,7 +23,9 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 32px;
   }
-
+  .bar {
+    display: none;
+  }
   /* ---------- visual ---------- */
   #visual {
     width: 100%;

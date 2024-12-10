@@ -1,4 +1,4 @@
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (max-width: 800px) {
   /* ---------- layout ---------- */
   body {
     background-color: #f6e0b7;
@@ -6,31 +6,26 @@
 
   /* ---------- header ---------- */
   header {
-    width: 750px;
+    width: 90%;
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   header h1 img {
-    width: 140px;
+    width: 100px;
   }
-  header ul {
-    display: flex;
-    gap: 35px;
-  }
-  header li {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
+  .gnb {
+    display: none;
   }
   .bar {
-    display: none;
+    font-size: 23px;
   }
 
   /* ---------- visual ---------- */
   #visual {
     width: 100%;
-    height: 27rem;
+    height: 20rem;
     overflow: hidden;
     background-image: url(../img/visual.jpg);
     background-repeat: no-repeat;
@@ -40,16 +35,16 @@
     background-color: #d70204;
   }
   #visual h2 {
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     text-align: center;
-    line-height: 27rem;
+    line-height: 20rem;
     letter-spacing: 3px;
   }
 
   /* ---------- con1 ---------- */
   #con1 {
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-left: 5%;
   }
   #con1 h2 {
@@ -60,10 +55,7 @@
   #con1 h2 span {
     color: #d70204;
   }
-  #con1 .wrap {
-    display: flex;
-    align-items: end;
-  }
+
   #con1 .img {
     text-align: center;
   }
@@ -78,12 +70,9 @@
   }
   #con1 h3 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
     white-space: nowrap;
-  }
-  #con1 .list {
-    margin-bottom: 14rem;
   }
   #con1 .list li.on h3,
   #con1 .list li.on p {
@@ -94,27 +83,25 @@
     margin-bottom: 1.4rem;
   }
   .img {
-    display: flex;
-    align-items: baseline;
-    gap: 40px;
+    margin: 0px auto;
   }
   .img li:nth-child(1) img {
-    width: 150px;
+    width: 90%;
+    max-width: 150px;
+    min-width: 100px;
   }
-  .img :nth-child(2) img,
-  .img :nth-child(3) img {
-    width: 70px;
+  .img li:nth-child(1) h4 {
+    margin-top: 2rem;
   }
-  .img :nth-child(2) p,
-  .img :nth-child(3) p {
+  .img li:nth-child(2) {
     display: none;
   }
-  .img {
-    margin-left: 2.2rem;
+  .img li:nth-child(3) {
+    display: none;
   }
   /* ---------- con2 ---------- */
   #con2 {
-    margin-top: 8rem;
+    margin: 8rem 0rem;
   }
   /* title */
   #con2 .con2Title {
@@ -124,7 +111,7 @@
     font-family: "Bebas Neue", sans-serif;
   }
   #con2 .con2Title div {
-    margin-left: 8rem;
+    margin-left: 2rem;
     display: flex;
     align-items: end;
     color: white;
@@ -134,30 +121,31 @@
     height: 20px;
   }
   #con2 .con2Title h2 {
-    font-size: 100px;
-    letter-spacing: 5px;
+    font-size: 80px;
+    letter-spacing: 3px;
+    display: none;
   }
   #con2 .con2Title span {
     vertical-align: super;
-    font-size: 50px;
+    font-size: 40px;
   }
   #con2 .con2Title p {
-    font-size: 26px;
+    font-size: 30px;
     letter-spacing: 2px;
     line-height: 30px;
     margin-left: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   /* pic */
   .alcoholTop {
-    width: 780px;
-    height: 220px;
+    width: 65%;
     display: flex;
+    flex-direction: column;
     margin: 0px auto;
     margin-top: 5rem;
   }
   .alcoholTop li {
-    width: calc(100% / 5);
+    height: 220px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -178,13 +166,15 @@
     background-image: url(../img/bar_con2_5_bnw.jpg);
   }
   .alcoholBottom {
-    width: 780px;
+    width: 95%;
     height: 220px;
     display: flex;
     margin: 0px auto;
+    flex-wrap: wrap;
+    display: none;
   }
   .alcoholBottom li {
-    width: calc(100% / 5);
+    width: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -232,7 +222,7 @@
   }
   /* ---------- con3 ---------- */
   #con3 {
-    width: 750px;
+    width: 95%;
     margin: 0px auto;
   }
   #con3 h2 {
@@ -240,21 +230,23 @@
     font-size: 70px;
     letter-spacing: 3px;
     margin-bottom: 1rem;
-    margin-top: 8rem;
+    margin-top: 3rem;
   }
   #con3 h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
+    word-break: keep-all;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.7rem;
     border-bottom: 2px solid #555;
   }
   #con3 .bev ul {
-    width: 750px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 100px;
+    gap: 10px;
   }
   #con3 .bev li {
     width: 100%;
@@ -273,7 +265,7 @@
   footer {
     width: 100%;
     padding: 1.3rem 0px;
-    margin-top: 10rem;
+    margin-top: 6rem;
     background-color: black;
     text-align: center;
     color: white;
@@ -314,11 +306,15 @@
   footer .policy {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+  }
+  .policy li {
+    display: none;
   }
   .policy li:last-child {
     border: 1px solid white;
     padding: 0.4rem 0.7rem;
+    display: block;
   }
   .policy a {
     color: white;
