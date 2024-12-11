@@ -45,11 +45,18 @@
   }
   /* ---------- header ---------- */
   header {
-    width: 750px;
-    margin: 3rem auto;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #f0c77b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 140px;
@@ -72,6 +79,7 @@
     width: 800px;
     height: 500px;
     margin: 0px auto;
+    margin-top: 7rem;
     font-family: "Bebas Neue", sans-serif;
     overflow-y: hidden;
   }

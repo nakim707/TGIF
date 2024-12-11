@@ -15,6 +15,7 @@
     font-family: "Bebas Neue", sans-serif;
     position: relative;
     background-color: #d70204;
+    margin-bottom: 7rem;
   }
   .visualTxt {
     padding-top: 4rem;
@@ -47,11 +48,18 @@
   }
   /* ---------- header ---------- */
   header {
-    width: 90%;
-    margin: 3rem auto;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #f0c77b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 100px;
