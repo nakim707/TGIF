@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 100px;
@@ -39,7 +40,6 @@
     background-position: center;
     font-family: "Bebas Neue", sans-serif;
     background-color: #d70204;
-    margin-top: 80px;
   }
   #visual h2 {
     font-size: 60px;
@@ -248,12 +248,19 @@
     padding-bottom: 0.7rem;
     border-bottom: 2px solid #555;
   }
-  #con3 .bev ul {
+  .bev ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    margin-top: 300px;
+    opacity: 0;
+  }
+  .bev ul.on {
+    margin-top: 0px;
+    opacity: 1;
+    transition: 2s;
   }
   #con3 .bev li {
     width: 100%;

@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 140px;
@@ -43,7 +44,6 @@
     background-position: center;
     font-family: "Bebas Neue", sans-serif;
     background-color: #d70204;
-    margin-top: 80px;
   }
   #visual h2 {
     font-size: 80px;
@@ -160,6 +160,13 @@
     width: 300px;
     text-align: center;
     background-color: white;
+    top: 200px;
+    opacity: 0;
+  }
+  .con li:nth-child(1).on {
+    top: 0px;
+    opacity: 1;
+    transition: 1s;
   }
   .con li:nth-child(1) img {
     width: 200px;
@@ -176,7 +183,13 @@
     width: 300px;
     text-align: center;
     background-color: white;
+    top: 650px;
+    opacity: 0;
+  }
+  .con li:nth-child(2).on {
     top: 450px;
+    opacity: 1;
+    transition: 1s;
   }
   .con li:nth-child(2) img {
     width: 75%;
@@ -191,7 +204,13 @@
     width: 300px;
     text-align: center;
     background-color: white;
+    top: 1100px;
+    opacity: 0;
+  }
+  .con li:nth-child(3).on {
     top: 900px;
+    opacity: 1;
+    transition: 1s;
   }
   .con li:nth-child(3) img {
     width: 80%;
@@ -208,7 +227,13 @@
     width: 300px;
     text-align: center;
     background-color: white;
+    top: 1520px;
+    opacity: 0;
+  }
+  .con li:nth-child(4).on {
     top: 1320px;
+    opacity: 1;
+    transition: 1s;
   }
   .con li:nth-child(4) img {
     width: 70%;
@@ -225,7 +250,13 @@
     width: 300px;
     text-align: center;
     background-color: white;
+    top: 1960px;
+    opacity: 0;
+  }
+  .con li:nth-child(5).on {
     top: 1760px;
+    opacity: 1;
+    transition: 1s;
   }
   .con li:nth-child(5) img {
     width: 70%;

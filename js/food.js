@@ -11,6 +11,7 @@ $(function () {
   $("#con1 li").on("click", function () {
     $("#con1 li").removeClass("on");
     $(this).addClass("on");
+    $("header").css({ opacity: "0" });
   });
   $(".recipe").on("mouseenter", function () {
     $(this).css({ "background-color": "white" });

@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 140px;
@@ -87,14 +88,16 @@
     font-size: 30px;
     letter-spacing: 2px;
   }
-  #con1 .list {
+  .list {
     margin-bottom: 300px;
+    white-space: nowrap;
   }
-  #con1 .list li.on h3,
-  #con1 .list li.on p {
+  .list li.on h3,
+  .list li.on p {
     color: #d70204;
   }
   #con1 li p {
+    width: 280px;
     font-size: 14px;
     margin-bottom: 20px;
   }
@@ -265,11 +268,18 @@
     padding-bottom: 7px;
     border-bottom: 2px solid #555;
   }
-  #con3 .bev ul {
+  .bev ul {
     width: 1000px;
     display: flex;
     justify-content: space-between;
     gap: 150px;
+    margin-top: 300px;
+    opacity: 0;
+  }
+  .bev ul.on {
+    margin-top: 0px;
+    opacity: 1;
+    transition: 2s;
   }
   #con3 .bev li {
     width: 100%;
