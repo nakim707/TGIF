@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 140px;
@@ -43,7 +44,6 @@
     background-position: center;
     font-family: "Bebas Neue", sans-serif;
     background-color: #d70204;
-    margin-top: 80px;
   }
   #visual h2 {
     font-size: 80px;
@@ -78,9 +78,23 @@
     height: 350px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-left: 2rem;
     box-sizing: border-box;
     padding: 4rem 2rem;
+  }
+  .txtRight1,
+  .txtRight2 {
+    margin-left: 100%;
+  }
+  .txtRight1.on {
+    margin-left: 2rem;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  .txtRight2.on {
+    margin-left: 2rem;
+    opacity: 1;
+    transition: 1s;
   }
   .txtRight div {
     width: 80px;
@@ -104,9 +118,22 @@
     text-align: right;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-left: 63%;
     box-sizing: border-box;
     padding: 4rem 2rem;
+  }
+  .txtLeft,
+  .txtLeft {
+    margin-left: 100%;
+  }
+  .txtLeft1.on {
+    margin-left: 63%;
+    opacity: 1;
+    transition: 1s;
+  }
+  .txtLeft2.on {
+    margin-left: 63%;
+    opacity: 1;
+    transition: 1s;
   }
   .txtLeft div {
     width: 80px;

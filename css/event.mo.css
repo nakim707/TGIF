@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 100px;
@@ -39,7 +40,6 @@
     background-position: center;
     font-family: "Bebas Neue", sans-serif;
     background-color: #d70204;
-    margin-top: 80px;
   }
   #visual h2 {
     font-size: 60px;
@@ -76,6 +76,21 @@
     box-sizing: border-box;
     padding: 4rem 2rem;
   }
+  .txtRight1,
+  .txtRight2 {
+    margin-left: 100%;
+  }
+  .txtRight1.on {
+    margin-left: 0%;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  .txtRight2.on {
+    margin-left: 0%;
+    opacity: 1;
+    transition: 1s;
+  }
   .txtRight div {
     width: 80px;
     height: 26px;
@@ -100,6 +115,21 @@
     color: white;
     box-sizing: border-box;
     padding: 4rem 2rem;
+  }
+  .txtLeft1,
+  .txtLeft2 {
+    margin-left: 100%;
+  }
+  .txtLeft1.on {
+    margin-left: 0%;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.3s;
+  }
+  .txtLeft2.on {
+    margin-left: 0%;
+    opacity: 1;
+    transition: 1s;
   }
   .txtLeft div {
     width: 80px;

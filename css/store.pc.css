@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 140px;
@@ -62,6 +63,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
   }
   .modal {
     width: 100vw;
@@ -71,14 +73,15 @@
     top: 0px;
     left: 0px;
     z-index: 998;
+    display: none;
   }
   #popup button {
-    margin-top: -30px;
-    margin-bottom: 10px;
+    margin-left: 410px;
     border: 1px solid black;
     border-radius: 3px;
-    padding: 2px 6px;
+    padding: 3px 8px;
     background-color: white;
+    cursor: pointer;
   }
   #popup .stripe1 {
     width: 100%;

@@ -17,6 +17,7 @@
     box-sizing: border-box;
     padding: 0px 50px;
     z-index: 100;
+    opacity: 0;
   }
   header h1 img {
     width: 140px;
@@ -73,39 +74,27 @@
     font-weight: bold;
     line-height: 30px;
   }
-  .txtRight {
-    width: 340px;
-    height: 390px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    margin-left: 50px;
-    box-sizing: border-box;
-    padding: 40px;
-  }
-  .txtRight div {
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 6px;
-    background-color: #d70204;
-    margin: 30px 0px 0px 150px;
-  }
-  .txtRight a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: white;
-  }
   .txtLeft {
     width: 340px;
     height: 390px;
-    text-align: right;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-left: 71%;
     box-sizing: border-box;
     padding: 40px;
+  }
+  .txtLeft1,
+  .txtLeft2 {
+    margin-left: -450px;
+  }
+  .txtLeft1.on {
+    margin-left: 50px;
+    opacity: 1;
+    transition: 1s;
+  }
+  .txtLeft2.on {
+    margin-left: 50px;
+    opacity: 1;
+    transition: 1s;
   }
   .txtLeft div {
     width: 100px;
@@ -114,9 +103,48 @@
     text-align: center;
     border-radius: 6px;
     background-color: #d70204;
-    margin: 30px 0px 0px 20px;
+    margin: 30px 0px 0px 150px;
   }
   .txtLeft a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+  }
+  .txtRight {
+    width: 340px;
+    height: 390px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-sizing: border-box;
+    padding: 40px;
+  }
+  .txtRight1,
+  .txtRight2 {
+    margin-left: 100%;
+  }
+  .txtRight1.on {
+    margin-left: 71%;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.3s;
+  }
+  .txtRight2.on {
+    margin-left: 71%;
+    opacity: 1;
+    transition: 1s;
+  }
+  .txtRight div {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #d70204;
+    margin: 30px 0px 0px 20px;
+  }
+  .txtRight a {
     width: 100%;
     height: 100%;
     display: block;
@@ -187,6 +215,11 @@
     width: 100%;
     height: 20px;
     margin-bottom: -4px;
+  }
+  #con2 a {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   /* ---------- footer ---------- */

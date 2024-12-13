@@ -312,24 +312,27 @@
     background-position: left;
   }
   #con4 .con4txt {
-    margin-left: 2rem;
     margin-top: 7rem;
   }
-  #con4 h3 {
+  .con4txt h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 70px;
     line-height: 70px;
     letter-spacing: 3px;
     margin-bottom: 2rem;
+    margin-left: 120%;
+    white-space: nowrap;
   }
   #con4 span {
     color: #d70204;
   }
-  #con4 p {
+  .con4txt p {
     font-size: 14px;
     line-height: 25px;
+    margin-left: 120%;
+    white-space: nowrap;
   }
-  #con4 .btnRed {
+  .con4txt .btnRed {
     color: white;
     background-color: #d70204;
     width: 170px;
@@ -339,6 +342,24 @@
     padding-left: 1rem;
     margin-top: 2rem;
     border-radius: 5px;
+    margin-left: 120%;
+  }
+  .con4txt.on h3 {
+    margin-left: 2rem;
+    opacity: 1;
+    transition: 1s;
+  }
+  .con4txt.on p {
+    margin-left: 2rem;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.2s;
+  }
+  .con4txt.on .btnRed {
+    margin-left: 2rem;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.4s;
   }
   /* ---------- footer ---------- */
   footer {
