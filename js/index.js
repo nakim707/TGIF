@@ -8,18 +8,7 @@ $(function () {
   let con4 = $("#con4").offset().top + footerline;
   let footer = $("footer").offset().top + footerline;
   //   console.log(visual, con1, con2, con3, footer);
-  $(".btn li:last-child").on("click", function () {
-    $("#popup").show();
-    $(".modal").show();
-  });
-  $("button").on("click", function () {
-    $("#popup").hide();
-    $(".modal").hide();
-  });
-  $(".page li").on("click", function () {
-    $(".page li").removeClass("on");
-    $(this).addClass("on");
-  });
+
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
     // console.log(scroll);

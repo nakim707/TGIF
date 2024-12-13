@@ -61,6 +61,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     color: white;
     text-align: center;
@@ -153,6 +154,11 @@
   .con li:nth-child(2n) {
     right: 6%;
   }
+  .con p {
+    font-size: 13px;
+    text-align: justify;
+  }
+
   /* box1 */
   .location li:nth-child(1) {
     top: 50px;

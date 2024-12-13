@@ -155,7 +155,10 @@
     text-align: left;
     padding-bottom: 1rem;
   }
-
+  .con p {
+    font-size: 13px;
+    text-align: justify;
+  }
   /* box1 */
   .con li:nth-child(1) {
     text-align: center;

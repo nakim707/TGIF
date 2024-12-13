@@ -106,6 +106,16 @@
     margin: 0px auto;
     text-align: center;
   }
+
+  .pastaWrap {
+    display: none;
+  }
+  .burgerWrap {
+    display: none;
+  }
+  .grillWrap {
+    display: none;
+  }
   #con2 img {
     width: 100%;
   }

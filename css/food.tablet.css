@@ -109,12 +109,39 @@
     background-color: white;
     margin: 0px auto;
     text-align: center;
+  }
+  .saladWrap {
     background-image: url(../img/food_salad1.png), url(../img/food_salad2.png),
       url(../img/food_salad3.png), url(../img/food_salad4.png);
     background-repeat: no-repeat;
-    background-position: 30px 310px, 540px 600px, -30px 850px, 580px 1100px;
+    background-position: 30px 270px, 540px 560px, -30px 790px, 580px 1060px;
     background-size: 240px, 280px, 300px, 260px;
   }
+  .pastaWrap {
+    background-image: url(../img/food_pasta1.png), url(../img/food_pasta2.png),
+      url(../img/food_pasta3.png), url(../img/food_pasta4.png);
+    background-repeat: no-repeat;
+    background-position: 30px 270px, 540px 560px, -30px 790px, 580px 1060px;
+    background-size: 240px, 280px, 300px, 260px;
+    display: none;
+  }
+  .burgerWrap {
+    background-image: url(../img/food_burger1.png), url(../img/food_burger2.png),
+      url(../img/food_burger3.png), url(../img/food_burger4.png);
+    background-repeat: no-repeat;
+    background-position: 30px 270px, 540px 560px, -30px 790px, 580px 1060px;
+    background-size: 240px, 280px, 300px, 260px;
+    display: none;
+  }
+  .grillWrap {
+    background-image: url(../img/food_grill1.png), url(../img/food_grill2.png),
+      url(../img/food_grill3.png), url(../img/food_grill4.png);
+    background-repeat: no-repeat;
+    background-position: 30px 300px, 540px 560px, -30px 820px, 580px 1000px;
+    background-size: 240px, 280px, 300px, 260px;
+    display: none;
+  }
+
   #con2 img {
     width: 100%;
   }
