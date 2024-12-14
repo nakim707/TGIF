@@ -8,6 +8,43 @@ $(function () {
   let footer = $("footer").offset().top + footerline;
   //   console.log(visual, con1, con2, con3, footer);
 
+  //헤더
+  $("header li").on("mouseenter", function () {
+    $(this).children(".pick").stop().animate({ width: "130%" });
+  });
+  $("header li").on("mouseleave", function () {
+    $(this).children(".pick").stop().animate({ width: "0%" });
+  });
+
+  $(".bar").on("click", function () {
+    $(".moGnb").slideToggle(1000);
+  });
+
+  //푸터
+  $("footer .policy li").on("mouseenter", function () {
+    $(this).children("div").stop().animate({ width: "100%" });
+  });
+  $("footer .policy li").on("mouseleave", function () {
+    $(this).children("div").stop().animate({ width: "0%" });
+  });
+  $("footer .policy li:last-child").on("mouseenter", function () {
+    $(this).css({ background: "white" });
+    $(this).children("a").css({ color: "black" });
+  });
+  $("footer .policy li:last-child").on("mouseleave", function () {
+    $(this).css({ background: "transparent" });
+    $(this).children("a").css({ color: "white" });
+  });
+  $("footer .sns li").on("mouseenter", function () {
+    $(this).css({ background: "#d70204" });
+    $(this).children("a").css({ color: "white" });
+  });
+  $("footer .sns li").on("mouseleave", function () {
+    $(this).css({ background: "white" });
+    $(this).children("a").css({ color: "black" });
+  });
+
+  //스크롤
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
     // console.log(scroll);
@@ -44,13 +81,6 @@ $(function () {
 
   //alcohol
 
-  let listTotal = $(".list li").length;
-  let imgTotal = $(".img li").length;
-
-  let i = 0;
-  // console.log(listTotal);
-  // console.log(imgTotal);
-
   $(".list li").on("click", function () {
     i = $(this).index();
     $(".list li").removeClass("on");
@@ -60,29 +90,4 @@ $(function () {
     $(".img li p").hide();
     $(".img li").eq(i).children("p").show();
   });
-
-  //help
-
-  // $(".list li").on("click", function () {
-  //   $(".list li").removeClass("on");
-  //   $(this).addClass("on");
-  // });
-  // $(".list li:nth-child(1)").on("click", function () {
-  //   $(".img li img").css({ width: "90px" });
-  //   $(".img li:nth-child(1) img").css({ width: "200px" });
-  //   $(".img li p").hide();
-  //   $(".img li:nth-child(1) p").show();
-  // });
-  // $(".list li:nth-child(2)").on("click", function () {
-  //   $(".img li img").css({ width: "90px" });
-  //   $(".img li:nth-child(2) img").css({ width: "200px" });
-  //   $(".img li p").hide();
-  //   $(".img li:nth-child(2) p").show();
-  // });
-  // $(".list li:nth-child(3)").on("click", function () {
-  //   $(".img li img").css({ width: "90px" });
-  //   $(".img li:nth-child(3) img").css({ width: "200px" });
-  //   $(".img li p").hide();
-  //   $(".img li:nth-child(3) p").show();
-  // });
 });

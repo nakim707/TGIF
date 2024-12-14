@@ -9,6 +9,43 @@ $(function () {
   let footer = $("footer").offset().top + footerline;
   //   console.log(visual, con1, con2, con3, footer);
 
+  // 헤더
+  $("header li").on("mouseenter", function () {
+    $(this).children("div").stop().animate({ width: "130%" });
+  });
+  $("header li").on("mouseleave", function () {
+    $(this).children("div").stop().animate({ width: "0%" });
+  });
+
+  $(".bar").on("click", function () {
+    $(".moGnb").slideToggle(1000);
+  });
+
+  //푸터
+  $("footer .policy li").on("mouseenter", function () {
+    $(this).children("div").stop().animate({ width: "100%" });
+  });
+  $("footer .policy li").on("mouseleave", function () {
+    $(this).children("div").stop().animate({ width: "0%" });
+  });
+  $("footer .policy li:last-child").on("mouseenter", function () {
+    $(this).css({ background: "white" });
+    $(this).children("a").css({ color: "black" });
+  });
+  $("footer .policy li:last-child").on("mouseleave", function () {
+    $(this).css({ background: "transparent" });
+    $(this).children("a").css({ color: "white" });
+  });
+  $("footer .sns li").on("mouseenter", function () {
+    $(this).css({ background: "#d70204" });
+    $(this).children("a").css({ color: "white" });
+  });
+  $("footer .sns li").on("mouseleave", function () {
+    $(this).css({ background: "white" });
+    $(this).children("a").css({ color: "black" });
+  });
+
+  // 스크롤 이벤트
   $(window).on("scroll", function () {
     let scroll = $(this).scrollTop();
     // console.log(scroll);
