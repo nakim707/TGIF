@@ -26,6 +26,13 @@
     font-size: 45px;
     line-height: 40px;
     letter-spacing: 7px;
+    margin-left: -70%;
+    opacity: 0;
+  }
+  .visualTxt.on h2 {
+    margin-left: 0px;
+    opacity: 1;
+    transition: 1s;
   }
   .visualTxt div {
     width: 100px;
@@ -38,6 +45,13 @@
     color: #d70204;
     background-color: white;
     border-radius: 5px;
+    margin-left: -70%;
+  }
+  .visualTxt.on div {
+    margin-left: 0px;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.4s;
   }
   #visual img {
     width: 60%;

@@ -7,20 +7,6 @@ $(function () {
   let footer = $("footer").offset().top + footerline;
   //   console.log(visual, con1, con2, con3, footer);
 
-  //팝업
-  $(".btn li:last-child").on("click", function () {
-    $("#popup").show();
-    $(".modal").show();
-  });
-  $("button").on("click", function () {
-    $("#popup").hide();
-    $(".modal").hide();
-  });
-  $(".page li").on("click", function () {
-    $(".page li").removeClass("on");
-    $(this).addClass("on");
-  });
-
   //헤더
   $("header li").on("mouseenter", function () {
     $(this).children(".pick").stop().animate({ width: "130%" });
@@ -31,6 +17,38 @@ $(function () {
 
   $(".bar").on("click", function () {
     $(".moGnb").slideToggle(1000);
+  });
+
+  //팝업
+  $(".btn:last-child").on("click", function () {
+    $(".modal").show();
+  });
+  $(".page1 .btn:last-child").on("click", function () {
+    $(".popup1").show();
+  });
+  $(".page2 .btn:last-child").on("click", function () {
+    $(".popup2").show();
+  });
+  $(".page3 .btn:last-child").on("click", function () {
+    $(".popup3").show();
+  });
+  $(".page4 .btn:last-child").on("click", function () {
+    $(".popup4").show();
+  });
+
+  $("button").on("click", function () {
+    $(".popup").hide();
+    $(".modal").hide();
+  });
+
+  //페이지 변경
+  $(".page li").on("click", function () {
+    i = $(this).index();
+    // console.log(i);
+    $(".page li").removeClass("on");
+    $(this).addClass("on");
+    $(".pageWrap>li").hide();
+    $(".pageWrap>li").eq(i).show();
   });
 
   //푸터

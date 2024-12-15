@@ -74,6 +74,14 @@
     font-size: 80px;
     line-height: 80px;
     letter-spacing: 7px;
+
+    margin-left: -50%;
+    opacity: 0;
+  }
+  .visualTxt.on h2 {
+    margin-left: 0px;
+    opacity: 1;
+    transition: 1s;
   }
   .visualTxt div {
     width: 100px;
@@ -86,6 +94,13 @@
     color: #d70204;
     background-color: white;
     border-radius: 7px;
+    margin-left: -20%;
+  }
+  .visualTxt.on div {
+    margin-left: 0px;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.4s;
   }
   #visual img {
     width: 550px;
@@ -129,6 +144,7 @@
     background-size: cover;
     background-position: center;
   }
+
   #con1 .con1Top li:nth-child(2) {
     width: calc(100% / 4 - 20px);
     background-image: url(../img/index_con1_2.jpg);
@@ -284,6 +300,7 @@
     height: 800px;
     background-color: white;
     margin-top: 150px;
+    padding-bottom: 50px;
     background-image: url(../img/stripe.jpg);
     background-repeat: no-repeat;
     background-position: top;

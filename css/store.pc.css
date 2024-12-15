@@ -142,7 +142,7 @@
     font-size: 13px;
   }
   /* ---------- popup ---------- */
-  #popup {
+  .popup {
     width: 900px;
     background-color: white;
     position: fixed;
@@ -162,7 +162,7 @@
     z-index: 998;
     display: none;
   }
-  #popup button {
+  .popup button {
     margin-left: 410px;
     border: 1px solid black;
     border-radius: 3px;
@@ -170,29 +170,29 @@
     background-color: white;
     cursor: pointer;
   }
-  #popup .stripe1 {
+  .popup .stripe1 {
     width: 100%;
     margin-bottom: 5px;
   }
-  #popup .stripe2 {
+  .popup .stripe2 {
     width: 100%;
     margin-bottom: -5px;
   }
-  #popup > ul {
+  .storeInfo {
     width: 800px;
     margin: 40px auto;
     display: flex;
     justify-content: space-between;
   }
-  #popup li:last-child {
+  .storeInfo li:last-child {
     width: 440px;
     box-sizing: border-box;
   }
-  #popup span {
+  .popup span {
     font-weight: bold;
     margin-right: 40px;
   }
-  #popup .info li {
+  .popup .info li {
     margin-bottom: 20px;
   }
 
@@ -276,6 +276,10 @@
     height: 100%;
     display: block;
     color: white;
+  }
+  .pageWrap > li:nth-child(2),
+  .pageWrap > li:nth-child(3) {
+    display: none;
   }
 
   /* ---------- page ---------- */

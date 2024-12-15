@@ -21,6 +21,9 @@ $(function () {
     $(".moGnb").slideToggle(1000);
   });
 
+  //비주얼
+  $(".visualTxt").addClass("on");
+
   //푸터
   $("footer .policy li").on("mouseenter", function () {
     $(this).children("div").stop().animate({ width: "100%" });

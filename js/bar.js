@@ -20,6 +20,30 @@ $(function () {
     $(".moGnb").slideToggle(1000);
   });
 
+  //NEW 메뉴
+
+  $(".list li").on("click", function () {
+    i = $(this).index();
+    $(".list li").removeClass("on");
+    $(this).addClass("on");
+    $(".img li img").css({ width: "90px" });
+    $(".img li").eq(i).children("img").css({ width: "200px" });
+    $(".img li p").hide();
+    $(".img li").eq(i).children("p").show();
+  });
+
+  //이미지메뉴
+  $("#con2 li").on("mouseover", function () {
+    $(this).css({
+      transform: "scale(1.5)",
+      transition: "0.5s",
+      position: "relative",
+    });
+  });
+  $("#con2 li").on("mouseleave", function () {
+    $("#con2 li").css({ transform: "scale(1)", position: "static" });
+  });
+
   //푸터
   $("footer .policy li").on("mouseenter", function () {
     $(this).children("div").stop().animate({ width: "100%" });
@@ -66,28 +90,5 @@ $(function () {
       //   console.log("footer");
       $("header").css({ opacity: "1" });
     }
-  });
-
-  $("#con2 li").on("mouseover", function () {
-    $(this).css({
-      transform: "scale(1.5)",
-      transition: "0.5s",
-      position: "relative",
-    });
-  });
-  $("#con2 li").on("mouseleave", function () {
-    $("#con2 li").css({ transform: "scale(1)", position: "static" });
-  });
-
-  //alcohol
-
-  $(".list li").on("click", function () {
-    i = $(this).index();
-    $(".list li").removeClass("on");
-    $(this).addClass("on");
-    $(".img li img").css({ width: "90px" });
-    $(".img li").eq(i).children("img").css({ width: "200px" });
-    $(".img li p").hide();
-    $(".img li").eq(i).children("p").show();
   });
 });
