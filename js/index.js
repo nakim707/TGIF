@@ -24,6 +24,16 @@ $(function () {
   //비주얼
   $(".visualTxt").addClass("on");
 
+  //con2
+  $(".prev").on("click", function () {
+    $(".foodList").prepend($(".foodList li:last-child"));
+    $(".con2txt").prepend($(".con2txt li:last-child"));
+  });
+  $(".next").on("click", function () {
+    $(".foodList").append($(".foodList li:first-child"));
+    $(".con2txt").append($(".con2txt li:first-child"));
+  });
+
   //푸터
   $("footer .policy li").on("mouseenter", function () {
     $(this).children("div").stop().animate({ width: "100%" });
@@ -65,6 +75,7 @@ $(function () {
     } else if (scroll >= con3 && scroll <= con4) {
       //   console.log("con3");
       $("header").css({ opacity: "1" });
+      $(".imgBox").addClass("active");
     } else if (scroll >= con4 && scroll <= footer) {
       //   console.log("con4");
       $("header").css({ opacity: "1" });
