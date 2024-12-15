@@ -245,7 +245,7 @@
     width: 240px;
   }
   /* txt */
-  w .con2txt {
+  .con2txt {
     width: 250%;
     display: flex;
     justify-content: space-between;
