@@ -216,6 +216,19 @@
     background-size: cover;
     background-position: top;
   }
+  .con1Top li:nth-child(1):hover {
+    background-size: 120%;
+  }
+  .con1Top li:nth-child(2):hover {
+    background-size: 160%;
+  }
+  .con1Bottom li:nth-child(1):hover {
+    background-size: 130%;
+  }
+  .con1Bottom li:nth-child(3):hover {
+    background-size: 140%;
+  }
+
   /* con2 */
   #con2 {
     width: 100%;
